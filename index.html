@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="progress.css">
+  <title>Fury vs Wilder 3 booking</title>
+</head>
+<body>
+
+
+   <img src="./fury-vs-wilder-iii-tickets_07-10-21_17_60e99b44d0295.jpeg" id="headerpic" alt="Fury vs Wilder 3">
+
+
+ <h1 class="headertext">Wilder vs Fury 3 - October 9th 2021</h1>
+
+ <div class="videocontainer">
+ <video src="./videoplayback (2).mp4" id="video" class="screen"></video>
+
+ <div class="controls">
+   <button class="btn" id="play"><span class="fa-play">PLAY</span></button>
+   <button class="btn" id="stop"><span class="fa-stop">STOP</span></button>
+   <span class="timestamp" id="timestamp">00:00</span>
+   <input type="range" id="progress" class="progress" min="0" max="100" step="0.1" value="0">
+   <input type="range" class="volumebar" id="volumebar" min="0" max="1" step="0.1" value="0.5"></span>
+   <img src="./audio.png" id="volumepic">
+ </div>
+</div>
+
+  <div class="boxing-container">
+    <label>Pick a section</label>
+    <select id="section">
+      <option value="1000">VIP (£1000)</option>
+      <option value="500">Premium (£500)</option>
+      <option value="200">Middle (£200)</option>
+      <option value="50">Upper (£50)</option>
+    </select>
+  </div>
+
+  <ul class="showcase">
+    <li>
+      <div class="seat"></div>
+      <small>n/a</small>
+    </li>
+
+    <li>
+      <div class="seat selected"></div>
+      <small>Selected</small>
+    </li>
+
+    <li>
+      <div class="seat occupied"></div>
+      <small>Occupied</small>
+    </li>
+  </ul>
+
+  <div class="container">
+    <div class="ring"></div>
+
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat occupied"></div>
+      <div class="seat occupied"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+
+    <div class="row">
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+      <div class="seat"></div>
+    </div>
+  </div>
+
+  <p class="text">You have selected <span id="count">0</span> seat(s) for a price of £<span id="total">0</span> in section: <span id='seatarea'></span></p>
+
+  <button id="bookseats">Book Seats</button>
+
+  <div class="form-container">
+    <form id="form" class="form">
+      <h2>Your details</h2>
+
+      <div class="form-control">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" class="forminputs" placeholder="Enter full name">
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="email">Email address</label>
+        <input type="text" id="email" class="forminputs" placeholder="Email address">
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="cardnumber">Card Number</label>
+        <input type="text" id="cardnumber" class="forminputs" placeholder="Enter card number">
+        <small>Error message</small>
+      </div>
+
+      <div class="form-control">
+        <label for="postcode">Postcode</label>
+        <input type="text" id="postcode" class="forminputs" placeholder="Enter postcode">
+        <small>Error message</small>
+      </div>
+
+      <button id="finalisepurchase">Submit</button>
+    </form>
+  </div>
+
+  <div class="purchase-details">
+    Purchase details appear here
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
