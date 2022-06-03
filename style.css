@@ -16,22 +16,56 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   font-family: 'Lato';
   margin: 0;
 }
 
-#headerpic {
-  margin-top: 800px;
-  width: auto;
-  margin-bottom: 30px;
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #242333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato';
+    margin: 0;
+  }
+
+  .imgcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #headerpic {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .headertext {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 2.5rem;
+  }
+}
+
+.imgcontainer {
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
+}
+
+#headerpic {
+  max-width: 100%;
+  height: auto;
 }
 
 .headertext {
   text-align: center;
+  font-size: 3rem;
+  text-transform: uppercase;
 }
 
 .videocontainer {
@@ -205,7 +239,7 @@ p.text span {
 }
 
 p.text {
-  margin: 25px 0;
+  margin: 10px 0;
 }
 
 .form-container {
